@@ -49,7 +49,7 @@ def upload_file(file):
 # Supposons que vous avez une liste de fichiers mp4 dans le répertoire "videos"
 import os
 
-video_files = [f for f in os.listdir("videos") if f.endswith(".mp4")]
+video_files = [f for f in os.listdir("videos") if f.endswith(".avi")]
 
 for video_file in video_files:
     try:
