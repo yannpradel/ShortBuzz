@@ -5,6 +5,7 @@ from oauth2client.tools import argparser
 from oauth2client.file import Storage
 from oauth2client.client import flow_from_clientsecrets
 from oauth2client.tools import run_flow
+import sys
 
 # Le fichier JSON que vous avez téléchargé à partir de votre projet Google Cloud Console
 CLIENT_SECRETS_FILE = "client_secrets.json"
@@ -49,7 +50,7 @@ def upload_file(file):
 # Supposons que vous avez une liste de fichiers mp4 dans le répertoire "videos"
 import os
 
-video_files = [f for f in os.listdir("videos") if f.endswith(".avi")]
+video_files = [f for f in os.listdir("videos") if f.endswith(".mp4")]
 
 for video_file in video_files:
     try:
