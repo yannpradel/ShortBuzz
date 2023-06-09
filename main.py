@@ -57,3 +57,4 @@ for video_file in video_files:
         print(f"Uploaded {video_file}")
     except HttpError as e:
         print(f"An error occurred: {e}")
+        #caca
